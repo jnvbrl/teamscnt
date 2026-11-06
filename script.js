@@ -191,7 +191,7 @@ var main=sp||tt,mp=sp?"shopee":"tiktok";
 return '<article class="card"><a class="im" '+ext(main,n,mp)+' aria-label="'+esc(n)+'" tabindex="-1"><span class="ph" aria-hidden="true">'+esc(n.charAt(0).toUpperCase())+'</span>'+(img?'<img src="'+esc(img)+'" alt="" loading="lazy" decoding="async">':'')+(badge?'<span class="badge">'+esc(badge)+'</span>':'')+'</a>'
 +'<div class="bd"><h3><a '+ext(main,n,mp)+'>'+esc(n)+'</a></h3>'
 +'<div class="plat">'+(sp?'<span>Shopee</span>':'')+(tt?'<span>TikTok</span>':'')+'</div>'
-+'<div class="acts">'+(sp?'<a class="btn sm" '+ext(sp,n,"shopee")+'>Shop on Shopee</a>':'')+(tt?'<a class="btn tt sm" '+ext(tt,n,"tiktok")+'>Shop on TikTok</a>':'')+'</div></div></article>'}
++'<div class="acts">'+(sp?'<a class="btn sm" '+ext(sp,n,"shopee")+'>Shopee</a>':'')+(tt?'<a class="btn tt sm" '+ext(tt,n,"tiktok")+'>TikTok</a>':'')+'</div></div></article>'}
 
 /* missing images fall back to the letter placeholder */
 document.addEventListener("error",function(e){var t=e.target;if(t&&t.tagName=="IMG"&&t.closest(".im,.slide,.dpic"))t.remove()},true);
