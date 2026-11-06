@@ -203,7 +203,7 @@ document.getElementById("soc").innerHTML=Object.keys(SOCIAL).map(function(k){ret
 
 /* best dupes */
 function lk(v){return !v?"":/^https?:/.test(v)?v:S+v}
-function dbtns(o){var sp=lk(o.shopee),tt=o.tiktok;return (sp?'<a class="btn sm" '+ext(sp,o.name,"shopee")+'>Shop on Shopee</a>':'')+(tt?'<a class="btn tt sm" '+ext(tt,o.name,"tiktok")+'>Shop on TikTok</a>':'')}
+function dbtns(o){var sp=lk(o.shopee),tt=o.tiktok;return (sp?'<a class="btn sm" '+ext(sp,o.name,"shopee")+'>Shopee</a>':'')+(tt?'<a class="btn tt sm" '+ext(tt,o.name,"tiktok")+'>TikTok</a>':'')}
 function dpic(o,cls){var sp=lk(o.shopee),href=sp||o.tiktok,t=href?'a':'div';
 return '<'+t+' class="dpic '+cls+'"'+(href?' '+ext(href,o.name,sp?"shopee":"tiktok")+' aria-label="'+esc(o.name)+'"':'')+'><span class="ph" aria-hidden="true">'+esc(o.name.charAt(0).toUpperCase())+'</span>'+(o.img?'<img src="'+esc(o.img)+'" alt="'+esc(o.name)+'" loading="lazy" decoding="async">':'')+'</'+t+'>'}
 function dupeGroup(g){var o=g.og;
